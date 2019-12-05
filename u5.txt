@@ -1,0 +1,59 @@
+import re
+
+path ="pinocho.txt"
+
+try:
+    archivo= open(path, 'r')
+except:
+    print ("el archivo no existe")
+    quit()
+
+texto= ""
+
+for linea in archivo:
+    texto += linea
+
+
+print (texto)
+#patron = "hijo"
+
+patron = r"\w+" #expresion para encontrar palabras
+result = re.findall(patron,texto)#re es libreria y findall una funcion
+
+print("\n resultado de la busqueda: ", result)
+
+patron= "\n"
+result= re.split(patron,texto)#re es libreria y split divide uj texto deacuerdo a un caracter o patron
+
+print("\n resultado de la busqueda ", result)
+
+patron="Pinocho"
+result = re.sub(patron, "puerco araña", texto)
+
+print ("\n resultado de la bisqueda ", result)
+
+.11
+.234
+.13123
+.13123
+
+8+12=20
+240-1=239
+
+3 = 11 * ( b * d)
+a = 80
+b = a 
+
+suma = factorial / 10 
+2.7 + 3, cont = cont + 1  
+edad >= 5, suma != 0
+
+if x =0 
+    
+
+
+try:
+	pass
+except Exceptioneoreoer :
+	raise e
+
